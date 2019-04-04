@@ -7,6 +7,8 @@ yii-redis使用socket或者tcp，此组件使用php编写的redis扩展
 
 目前所知php_redis性能要比socket好一点。
 
+主要修改文件为Connection.php
+
 根据yii2-redis改编而成,配置方法与yii2-redis相同，
 
 大部分函数兼容yii2-redis的写法，
