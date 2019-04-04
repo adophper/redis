@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace components\redis;
+namespace components\phpredis;
 
 use Yii;
 use yii\di\Instance;
@@ -29,7 +29,7 @@ use yii\di\Instance;
  * [
  *     'components' => [
  *         'cache' => [
- *             'class' => 'yii\redis\Cache',
+ *             'class' => 'components\phpredis\Cache',
  *             'redis' => [
  *                 'hostname' => 'localhost',
  *                 'port' => 6379,
@@ -46,7 +46,7 @@ use yii\di\Instance;
  * [
  *     'components' => [
  *         'cache' => [
- *             'class' => 'yii\redis\Cache',
+ *             'class' => 'components\phpredis\Cache',
  *             // 'redis' => 'redis' // id of the connection application component
  *         ],
  *     ],

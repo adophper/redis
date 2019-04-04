@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace components\redis;
+namespace components\phpredis;
 
 use yii\base\Component;
 use yii\db\Exception;
