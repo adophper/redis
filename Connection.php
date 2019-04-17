@@ -268,6 +268,8 @@ class Connection extends Component
     public function open()
     {
         if ($this->_redis !== false) {
+            //防止串库
+            $this->_redis->select($this->database);
             return;
         }
 
