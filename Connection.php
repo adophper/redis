@@ -366,7 +366,7 @@ class Connection extends Component
 
         $type = isset($params[4]) ? $params[4] : 'nx';
 
-        \Yii::info("Executing Redis Command: {$name}, \r\n".var_export($params, true), 'mylog');
+//        \Yii::info("Executing Redis Command: {$name}, \r\n".var_export($params, true), 'mylog');
 //        print_r("Redis Func: ".$name."\r\n");
 //        print_r($params);
 
