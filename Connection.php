@@ -364,8 +364,6 @@ class Connection extends Component
 
         $expire = isset($params[3]) ? $params[3] : 0;
 
-        $type = isset($params[4]) ? $params[4] : 'nx';
-
 //        \Yii::info("Executing Redis Command: {$name}, \r\n".var_export($params, true), 'mylog');
 //        print_r("Redis Func: ".$name."\r\n");
 //        print_r($params);
@@ -568,12 +566,9 @@ class Connection extends Component
                         return $this->_redis->setex($params[0], $expire, $params[1]);
                     }
                 }else if ($arg2 == 'px') {
-
-                    return $this->_redis->set($params[0], $params[1], [$type, 'px' => $expire]);
-
+                    return $this->_redis->psetex($params[0], $expire, $params[1]);
                 }else if ($arg2 == 'nx') {
                     return $this->_redis->setnx($params[0], $params[1]);
-
                 }else{
                     return $this->_redis->set($params[0], $params[1]);
                 }
