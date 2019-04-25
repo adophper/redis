@@ -3,7 +3,7 @@ Yii2 使用 php_redis扩展
 
 与yii-redis区别在于链接redis方法，
 
-yii-redis使用socket或者tcp，此组件使用php编写的redis扩展
+yii-redis使用socket或者tcp，此组件使用php扩展C编写的redis扩展
 
 目前所知php_redis性能要比socket好一点。
 
